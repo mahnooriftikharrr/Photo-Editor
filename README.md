@@ -14,7 +14,7 @@ It demonstrates strong skills in **file I/O**, **algorithmic problem solving**, 
 With just a few commands, users can transform images using operations like **negation**, **quantization**, **grayscale**, and **horizontal flipping**, all built from scratch without external image libraries.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c5c07d45-60dd-4404-9df6-830f6e384e13" width="400" alt="Input image preview"/>
+  <img src="https://github.com/user-attachments/assets/c5c07d45-60dd-4404-9df6-830f6e384e13" width="250" alt="Input image preview"/>
 </p>
 
 ---
@@ -31,12 +31,12 @@ This project showcases practical **Java programming**, **algorithm design**, and
 
 ## ⚙️ Features
 
-| Feature                | Description                                                    | Output                                                                                             |
-| ---------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| 🧩 **Negate**          | Inverts each pixel’s RGB value (`new = 255 - old`)             | ![negate](https://github.com/user-attachments/assets/e8a0c3c9-040d-48c7-a611-5eeffd9e4c66)         |
-| 🎛️ **Quantize**       | Converts pixel values to 0 or 255 depending on a 127 threshold | ![quantize](https://github.com/user-attachments/assets/51ed4f66-ab4f-427c-9c34-64a5cfd299e2)       |
-| ⚪ **Grayscale**        | Averages RGB components for each pixel                         | ![grayscale](https://github.com/user-attachments/assets/52901c28-817b-42ed-aa33-ac64236599dd)      |
-| 🔁 **Flip Horizontal** | Flips the image across its vertical axis                       | ![fliphorizontal](https://github.com/user-attachments/assets/7eb9d03f-1485-4b51-bb27-1e86b3fc872e) |
+| Feature                | Description                                                    | Output                                                                                                   |
+| ---------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 🧩 **Negate**          | Inverts each pixel’s RGB value (`new = 255 - old`)             | <img src="https://github.com/user-attachments/assets/e8a0c3c9-040d-48c7-a611-5eeffd9e4c66" width="200"/> |
+| 🎛️ **Quantize**       | Converts pixel values to 0 or 255 depending on a 127 threshold | <img src="https://github.com/user-attachments/assets/51ed4f66-ab4f-427c-9c34-64a5cfd299e2" width="200"/> |
+| ⚪ **Grayscale**        | Averages RGB components for each pixel                         | <img src="https://github.com/user-attachments/assets/52901c28-817b-42ed-aa33-ac64236599dd" width="200"/> |
+| 🔁 **Flip Horizontal** | Flips the image across its vertical axis                       | <img src="https://github.com/user-attachments/assets/7eb9d03f-1485-4b51-bb27-1e86b3fc872e" width="200"/> |
 
 ---
 
