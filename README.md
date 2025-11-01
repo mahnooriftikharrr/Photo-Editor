@@ -1,100 +1,157 @@
-# Image Modification Program
+<!-- 🎨 Animated Header -->
 
-## Overview
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&pause=800&color=FF69B4&center=true&vCenter=true&width=800&lines=🎨+Image+Modification+Program;Java-Based+PPM+Image+Processor;Algorithms+%7C+File+I%2FO+%7C+Color+Transformation+💻✨" alt="Typing Animation" />
+</p>
 
-The **Image Modification Program** is a Java-based application that processes and modifies PPM (Portable Pixmap) image files. The program allows users to apply various image transformations, such as negation, quantization, grayscale conversion, and horizontal flipping.
+---
 
-## How It Works
-1. The program reads an input PPM file and processes its header to extract metadata such as image width, height, and maximum color value.
-2. The user selects one of the available modifications.
-3. The program applies the selected modification to the image data and writes the modified image to an output PPM file.
+# 🎨 Image Modification Program
 
-## Usage
-1. Compile the program:
-   ```bash
-   javac ImageModify.java
-   ```
-2. Run the program:
-   ```bash
-   java ImageModify
-   ```
-3. Follow the prompts:
-   - Enter the name of the input PPM file.
-   - Enter the name of the output PPM file.
-   - Select a modification by entering the corresponding letter:
-     - `a`: Negate
-     - `b`: Quantize
-     - `c`: Grayscale
-     - `d`: Flip Horizontal
+The **Image Modification Program** is a **Java-based application** that processes and modifies **PPM (Portable Pixmap)** image files.
+It demonstrates strong skills in **file I/O**, **algorithmic problem solving**, and **low-level image manipulation** — key areas in both software development and computational image processing.
 
-## Input and Output
-- **Input File**: The program expects a valid PPM file as input. The file should follow the PPM format, including a header with the PPM type, image dimensions, and maximum color value.
-- **Output File**: The program generates a modified PPM file based on the selected transformation.
+With just a few commands, users can transform images using operations like **negation**, **quantization**, **grayscale**, and **horizontal flipping**, all built from scratch without external image libraries.
 
-## EXAMPLE
-## Our Input ppm File converted to jpg:
-![althaea](https://github.com/user-attachments/assets/c5c07d45-60dd-4404-9df6-830f6e384e13)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c5c07d45-60dd-4404-9df6-830f6e384e13" width="400" alt="Input image preview"/>
+</p>
 
-## Features 
-- **Negate**: Inverts the colors of the image by subtracting each pixel value from 255.
--  **Output**:
--  
-  ![negate](https://github.com/user-attachments/assets/e8a0c3c9-040d-48c7-a611-5eeffd9e4c66)
+---
 
-- **Quantize**: Converts pixel values to either 0 or 255 based on a threshold of 127.
- **Output**:
-  
-  ![quantize](https://github.com/user-attachments/assets/51ed4f66-ab4f-427c-9c34-64a5cfd299e2)
-  
-- **Grayscale**: Converts the image to grayscale by averaging the red, green, and blue components of each pixel.
- **Output**:
-  
-  ![grayscale](https://github.com/user-attachments/assets/52901c28-817b-42ed-aa33-ac64236599dd)
-  
-- **Flip Horizontal**: Flips the image horizontally.
-**Output**:
-  
-  ![fliphorizontal](https://github.com/user-attachments/assets/7eb9d03f-1485-4b51-bb27-1e86b3fc872e)
+## 💡 Overview
 
-## Whats happening behind the back?
+1. The program reads and parses an input **PPM image file**, extracting metadata (width, height, max color value).
+2. Users choose one of the available transformations.
+3. The modified image is written to a new output PPM file, preserving format integrity and header details.
 
-### Input
-A PPM file (`input.ppm`) with the following content:
+This project showcases practical **Java programming**, **algorithm design**, and **data structure manipulation**, all applied in a real-world computational task.
+
+---
+
+## ⚙️ Features
+
+| Feature                | Description                                                    | Output                                                                                             |
+| ---------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| 🧩 **Negate**          | Inverts each pixel’s RGB value (`new = 255 - old`)             | ![negate](https://github.com/user-attachments/assets/e8a0c3c9-040d-48c7-a611-5eeffd9e4c66)         |
+| 🎛️ **Quantize**       | Converts pixel values to 0 or 255 depending on a 127 threshold | ![quantize](https://github.com/user-attachments/assets/51ed4f66-ab4f-427c-9c34-64a5cfd299e2)       |
+| ⚪ **Grayscale**        | Averages RGB components for each pixel                         | ![grayscale](https://github.com/user-attachments/assets/52901c28-817b-42ed-aa33-ac64236599dd)      |
+| 🔁 **Flip Horizontal** | Flips the image across its vertical axis                       | ![fliphorizontal](https://github.com/user-attachments/assets/7eb9d03f-1485-4b51-bb27-1e86b3fc872e) |
+
+---
+
+## 🧠 Technical Skills Demonstrated
+
+| Skill Area                    | Technologies & Concepts                                            |
+| ----------------------------- | ------------------------------------------------------------------ |
+| 💻 **Programming Language**   | Java (JDK 8+)                                                      |
+| 🧮 **Algorithms**             | Pixel-wise manipulation, conditional quantization, matrix flipping |
+| 🧱 **Data Structures**        | 2D arrays for RGB pixel data                                       |
+| 📁 **File I/O**               | Reading & writing raw PPM files                                    |
+| ⚙️ **Procedural Programming** | Modular design and reusable transformation methods                 |
+| 🧩 **Problem Solving**        | Manual image processing logic without dependencies                 |
+| 🧪 **Testing & Debugging**    | Command-line execution and visual output verification              |
+
+---
+
+## 🧩 Code Structure
+
+```
+ImageModificationProgram/
+├── ImageModify.java          # Main class: user interaction & method control
+├── processHeader()           # Extracts PPM metadata (width, height, color max)
+├── NEGATE()                  # Inverts RGB color values
+├── QUANTIZE()                # Converts pixel brightness to binary threshold
+├── GRAY_SCALE()              # Applies average-based grayscale filter
+├── FLIP_HORIZONTAL()         # Reverses pixel positions horizontally
+```
+
+---
+
+## 🚀 How It Works
+
+### 🧾 Input Example
+
+**Input file (input.ppm):**
+
 ```
 P3
 4 4
 255
 255 0 0  0 255 0  0 0 255  255 255 0
 255 255 255  128 128 128  64 64 64  0 0 0
-...
 ```
 
-### Output
-After applying the **Negate** transformation, the output file (`output.ppm`) will contain:
+**After Negation:**
+
 ```
 P3
 4 4
 255
 0 255 255  255 0 255  255 255 0  0 0 255
 0 0 0  127 127 127  191 191 191  255 255 255
-...
 ```
 
-## Code Structure
+---
 
-- **`main` Method**: Handles user input, file I/O, and calls the appropriate modification method.
-- **`processHeader` Method**: Reads and writes the PPM file header.
-- **Modification Methods**:
-  - `NEGATE`: Applies color inversion.
-  - `QUANTIZE`: Applies threshold-based quantization.
-  - `GRAY_SCALE`: Converts the image to grayscale.
-  - `FLIP_HORIZONTAL`: Flips the image horizontally.
+## 🧰 Usage
 
-## Requirements
-- Java Development Kit (JDK) 8 or higher.
-- A valid PPM file as input.
+### Compile
 
-## Notes
-- The program overwrites the output file if it already exists.
-- Ensure the input file is in the correct PPM format; otherwise, the program may fail.
+```bash
+javac ImageModify.java
+```
 
+### Run
+
+```bash
+java ImageModify
+```
+
+### Follow Prompts
+
+* Input PPM filename
+* Output PPM filename
+* Choose operation:
+
+  * `a`: Negate
+  * `b`: Quantize
+  * `c`: Grayscale
+  * `d`: Flip Horizontal
+
+---
+
+## 🧱 Requirements
+
+* Java Development Kit (JDK 8 or later)
+* Valid `.ppm` input file (P3 format)
+
+---
+
+## ⚠️ Notes
+
+* The output file **overwrites** existing files with the same name.
+* Ensure the input image follows correct **PPM syntax** (header + RGB data).
+* No external libraries are required — **entire logic implemented manually**.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I gained experience in:
+
+* Designing low-level image processing algorithms
+* Building modular and testable Java programs
+* Parsing and reconstructing structured data formats
+* Strengthening my debugging and console-testing workflows
+
+---
+
+## 👩🏻‍💻 Author
+
+**Mahnoor Iftikhar**
+📍 *Pacific Lutheran University* — CS & Economics Double Major, Data Science Minor
+💡 Passionate about **software that merges math, logic, and creativity** to solve real-world challenges.
+
+📫 [LinkedIn](https://www.linkedin.com/in/mahnooriftikharrr)
+📧 [mahnooriftikharr@gmail.com](mailto:mahnooriftikharr@gmail.com)
